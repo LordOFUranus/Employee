@@ -3,7 +3,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         Employee firstMan = new Employee("Иван Иванов", "Кассир","x@gmail.com", "+777777777", 40000, 20);
-        firstMan.getInfo();
+        firstMan.printInfo();
 
         System.out.println("Массив");
         Employee[] arrayEmployee = new Employee[5];
@@ -15,7 +15,7 @@ public class Main {
 
         for (int i= 0; i<arrayEmployee.length;i++){
             if (arrayEmployee[i].getAge()>=40){
-                arrayEmployee[i].getInfo();
+                arrayEmployee[i].printInfo();
             }
         }
     }
